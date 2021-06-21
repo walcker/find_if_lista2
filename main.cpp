@@ -6,7 +6,7 @@ int main() {
     // Declara das variáveis.
     //int cont =0;
     int n; 
-    char m;             
+    char m,k;             
 
     //Requisita ao usuário o número de valores do vetor
     cout << "Entre com o número de objetos do vetor: ";
@@ -27,9 +27,20 @@ int main() {
     for (int i = 0 ; i < n ; i++){
 
        // Imprime o vetor
-        cout << vetor[i] <<  endl;
+        cout << vetor[i] << " ";
     }
 
     cout << endl;
-    //cout << cont << endl;
+    
+    //Pede o objeto a ser comparado ao usuário
+    cout << " Entre com o objeto que quer encontar: ";
+    cin >> k;
+
+    //Compara o objeto ao objeto do vetor e retorna o resultado
+    for (int i = 0 ; i < n ; i++){
+      if(vetor[i] == k){
+        cout << i << endl;
+      }
+    }
+
 }
